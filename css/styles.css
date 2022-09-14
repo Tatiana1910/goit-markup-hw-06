@@ -616,7 +616,7 @@ button {
 }
 
 .picture:hover .overlay,
-.picture:focus .overlay{
+.picture:focus .overlay {
   transform: translateY(0);
 }
 
@@ -739,4 +739,145 @@ button {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+
+  transition: background-color var(--animation-time) var(--time-functial),
+    fill var(--animation-time) var(--time-functial);
+}
+
+.modal-btn:hover {
+  background-color: var(--accent-txt-cl);
+  fill: var(--white-bg-cl);
+}
+
+/*------------------------------------*/
+
+.form-register {
+  width: 530px;
+  height: 580px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+  text-align: center;
+  margin-bottom: 12px;
+
+  color: var(--main-txt-cl);
+}
+
+.form-field {
+  display: flex;
+  outline: 1px solid rgb(16, 222, 74);
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-label {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--light-txt-cl);
+}
+
+.input-div {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: transparent;
+
+  transition: outline-color var(--animation-time) var(--time-functial),
+    border var(--animation-time) var(--time-functial);
+}
+
+.modal-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  transition: fill var(--animation-time) var(--time-functial);
+}
+
+.form-input:focus ~ .modal-icon,
+.form-input:hover ~ .modal-icon {
+  fill: var(--accent-txt-cl);
+}
+
+.form-input:focus,
+.form-input:hover {
+  outline-color: var(--accent-txt-cl);
+  border: 1px solid var(--accent-txt-cl);
+}
+
+.form-comment {
+  display: flex;
+  outline: 1px solid rgb(16, 222, 74);
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-texterea {
+  width: 100%;
+  height: 120px;
+  padding: 16px 12px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: outline-color var(--animation-time) var(--time-functial),
+    border var(--animation-time) var(--time-functial);
+}
+
+.form-texterea:focus,
+.form-texterea:hover {
+  outline-color: var(--accent-txt-cl);
+  border: 1px solid var(--accent-txt-cl);
+}
+
+.checkbox-label {
+  display: flex;
+  margin-bottom: 30px;
+  color: var(--light-txt-cl);
+}
+
+.checkbox {
+  margin-right: 9px;
+}
+
+.check-title {
+  text-decoration-line: underline;
+  color: var(--accent-txt-cl);
+}
+
+.form-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+  letter-spacing: 0.06em;
+
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+
+  cursor: pointer;
+  padding: 10px 52px;
+  margin: 0 auto;
+
+  color: var(--white-txt-cl);
+  background-color: var(--accent-txt-cl);
 }
