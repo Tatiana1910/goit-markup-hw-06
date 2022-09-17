@@ -476,9 +476,10 @@ button {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
 }
-
+.footer-address {
+  margin-right: 70px;
+}
 .adress-link {
   margin-top: 20px;
 }
@@ -712,8 +713,10 @@ button {
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--animation-time) var(--time-functial);
 
-  width: 530px;
-  height: 580px;
+  width: 528px;
+  height: 581px;
+
+  padding: 40px;
   background-color: var(--white-bg-cl);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -750,6 +753,10 @@ button {
 }
 
 /*-------------footer-follow-----------------------*/
+.footer-form {
+  margin-left: auto;
+}
+
 .follow-form {
   display: inline-flex;
   align-items: center;
@@ -804,14 +811,6 @@ button {
 }
 
 /*--------------------------------------*/
-
-.form-register {
-  width: 530px;
-  height: 580px;
-  padding: 40px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .form-title {
   font-weight: 700;
@@ -914,7 +913,6 @@ button {
 
 .icon-checked {
   opacity: 0;
-  fill: red;
   transition: opacity var(--animation-time) var(--time-functial);
 }
 
