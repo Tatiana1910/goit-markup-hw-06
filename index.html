@@ -444,17 +444,22 @@
             </label>
 
 
-            <label class="form-agreement" >
-              <input class="checkbox visually-hidden " type="checkbox" name="agreement" />
-              <svg class="checkbox-icon" width="15" height="15">
-                <use class="icon-checked" href="./images/icons.svg#icon-checked"></use>
-                <use class="icon-unchecked" href="./images/icons.svg#icon-unchecked"></use>
-              </svg>
-               <span class="check-title-desc">Погоджуюся з розсилкою та приймаю <a href=""  class="check-title"target="_blank"  rel="noopener noreferrer" aria-label="Умови договору" >Умови договору</a></span> 
-            </label> 
+            <label class="modal-checkbox-agreement"> 
+            <input class="modal-checkbox visually-hidden" type="checkbox" name="license" required></input>
+            <span class="checkbox-field"></span>
+            <span class="checkbox-text">
+              Погоджуюся з розсилкою та приймаю
+              <a
+                href="#"
+                class="checkbox-link"
+                target="_blank"
+                rel="noreferrer noopener nofollow"
+                >Умови договору</a
+              >
+            </span>
+          </label>
 
-           
-            <button class="form-btn" type="submit">Відправити</button>
+          <button class="form-btn" type="submit">Відправити</button>
             
           
         </form>

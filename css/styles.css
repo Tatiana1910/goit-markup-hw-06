@@ -902,7 +902,7 @@ button {
   border: 1px solid var(--accent-txt-cl);
 }
 
-.form-agreement {
+.modal-checkbox-agreement {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -911,33 +911,33 @@ button {
   gap: 7px;
 }
 
-.icon-checked {
-  opacity: 0;
-  transition: opacity var(--animation-time) var(--time-functial);
-}
-
-.checkbox:checked + .checkbox-icon .icon-checked {
-  opacity: 1;
-}
-
-.icon-unchecked {
-  opacity: 1;
-}
-
-.checkbox:checked + .checkbox-icon .icon-unchecked {
-  opacity: 1;
-  fill: #2196f3;
-
-  transition: opacity var(--animation-time) var(--time-functial);
-}
-
-.check-title-desc {
-  user-select: none;
-}
-
-.check-title {
-  text-decoration-line: underline;
+.checkbox-link {
   color: var(--accent-txt-cl);
+}
+.checkbox-field {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  margin: 0;
+
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: border-color var(--animation-time) var(--time-functial),
+    background-image var(--animation-time) var(--time-functial);
+}
+.checkbox-field:hover,
+.checkbox-field:focus {
+  border-color: var(--accent-txt-cl);
+}
+
+.modal-checkbox:checked ~ .checkbox-field {
+  background-image: url(../images/checked.svg);
+  background-size: cover;
+  background-position: center;
+  background-origin: border-box;
+  border-color: var(--accent-txt-cl);
 }
 
 .form-btn {
